@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.cartographer/
+.agent-pepper/
+playwright-report/
+test-results/
+*.log
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
+browseros-foundation/
+videos/
+apps/server/.agent-pepper-fallback-test*/
+apps/server/.env

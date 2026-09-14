@@ -1,0 +1,20 @@
+{
+  "name": "agent-pepper",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": ["apps/*"],
+  "scripts": {
+    "dev": "concurrently -n server,web -c cyan,magenta \"npm run dev -w @agent-pepper/server\" \"npm run dev -w @agent-pepper/web\"",
+    "build": "npm run build -w @agent-pepper/server && npm run build -w @agent-pepper/web",
+    "typecheck": "npm run typecheck -w @agent-pepper/server && npm run typecheck -w @agent-pepper/web",
+    "test": "npm run test -w @agent-pepper/server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "engines": {
+    "node": ">=25.3.0"
+  }
+}
+
+
